@@ -4,17 +4,30 @@ public class Actor
 {
 	private Location loc;
 	private Image img;
-	private final int STEP_SIZE;
+
+	private int STEP_SIZE;
 	public Actor(Location l, Image i)
 	{
 		loc = l;
-		img = i;
+		setImg(i);
 	}
 	public void setTarget(){}
-	public void moveLeft(){}
+	public void moveLeft(){
+		int i = STEP_SIZE--;
+	}
 	public void moveRight(){}
 	public void shoot(){}
 	public void explode(){}
-	public boolean contains(Location point){}
+	public boolean contains(Location point){
+		return true;
+		
+	}
+	public Image getImg() {
+		return img;
+	}
+	public void setImg(Image img) {
+		this.img = img;
+	}
+	
 	
 }
