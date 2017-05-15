@@ -32,5 +32,6 @@ public class Location
 	public Location getLocation()
 	{
 		return new Location(getWidth(), getHeight());
+		
 	}
 }
