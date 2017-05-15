@@ -29,6 +29,7 @@ public class Location
 		myWidth = width;
 		myHeight = height;
 	}
+	
 	public Location getLocation()
 	{
 		return new Location(getWidth(), getHeight());
