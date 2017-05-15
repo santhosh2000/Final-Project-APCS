@@ -8,7 +8,9 @@ public class PlayerBullet extends IFO implements Moveable
 	{
 		super(c, loc);
 	}
-	public void move(){}
+	public void run(){}
+	
+	
 }
  
 

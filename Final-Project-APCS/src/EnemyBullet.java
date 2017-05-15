@@ -10,7 +10,7 @@ public class EnemyBullet extends IFO implements Moveable
 	{
 		
 	}
-	public void move()
+	public void run()
 	{
 	}
 	
