@@ -30,4 +30,13 @@ public class Actor
 	}
 	
 	
+	}
+public void getHeight()
+{
+}
+public void getWidth()
+{
+}
+	
+	
 }

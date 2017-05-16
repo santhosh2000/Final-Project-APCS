@@ -1,11 +1,8 @@
 
 public class Asteroid extends IFO implements Moveable{
-	public final Color color;
-	public Location loc;
-	public final SPEED;
-	public Asteroid(Color c, Location l)
+	public Asteroid(Color c, Location l, int s, int t )
 	{
-		super(c, l);
+		super(c, l, s, t);
 	}
 	public void move()
 	{
