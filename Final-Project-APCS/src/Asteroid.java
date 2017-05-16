@@ -4,7 +4,7 @@ public class Asteroid extends IFO implements Moveable{
 	{
 		super(c, l, s, t);
 	}
-	public void move()
+	public void run()
 	{
 		
 	}

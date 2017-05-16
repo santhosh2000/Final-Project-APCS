@@ -5,7 +5,7 @@ public class Actor
 	private Location loc;
 	private Image img;
 
-	private int STEP_SIZE;
+	private final int STEP_SIZE;
 	public Actor(Location l, Image i)
 	{
 		loc = l;
@@ -15,7 +15,10 @@ public class Actor
 	public void moveLeft(){
 		int i = STEP_SIZE--;
 	}
-	public void moveRight(){}
+	public void moveRight()
+	{
+		int i = STEP_SIZE++;
+	}
 	public void shoot(){}
 	public void explode(){}
 	public boolean contains(Location point){
