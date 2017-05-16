@@ -1,12 +1,10 @@
 
 public class PlayerBullet extends IFO implements Moveable
 {
-	private Color c;
-	private Location loc;
-	private final int SPEED;
-	public PlayerBullet(Color color, Location l)
+
+	public PlayerBullet(Color color, Location l, int speed)
 	{
-		super(c, loc);
+		super(color, l, speed);
 	}
 	public void run(){}
 	

@@ -1,14 +1,11 @@
 
 public class EnemyBullet extends IFO implements Moveable
 {
-	private final int SPEED;
-	private  Location loc;
 	private int height;
-	private Color color;
-	public EnemyBullet(Location l, int h,
+	public EnemyBullet(Location l, int h,int speed,
 			DrawingCanvas canvas, Actor aShip, Color color)
 	{
-		
+		super(l, color, speed);
 	}
 	public void run()
 	{
