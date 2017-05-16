@@ -1,5 +1,5 @@
 
-public class Location
+public class Location //some class that marks a location for each actor on a screen
 {
 	private int myWidth;
 	private int myHeight;
