@@ -13,5 +13,10 @@ public class Ship {
 		super(xPos,yPos,game);
 		
 	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println("Why are you so bad!");
+	}
 
 }
