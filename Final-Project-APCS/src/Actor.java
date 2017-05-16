@@ -1,45 +1,31 @@
 import java.awt.image.*;
 
-public class Actor
+public interface  Actor
 {
-	private Location loc;
-	private Image img;
+	
 
-	private final int STEP_SIZE;
-	public Actor(Location l, Image i)
-	{
-		loc = l;
-		setImg(i);
-	}
-	public void setTarget(){}
-	public void moveLeft(){
-		int i = STEP_SIZE--;
-	}
-	public void moveRight()
-	{
-		int i = STEP_SIZE++;
-	}
-	public void shoot(){}
-	public void explode(){}
-	public boolean contains(Location point){
-		return true;
+		/**
+		 * Get the width of the actor 
+		 * 
+		 * @return The width in pixels of this actor 
+		 */
+		public int getWidth();
+
+		/**
+		 * Get the height of the actor 
+		 * 
+		 * @return The height in pixels of this actor 
+		 */
+		public int getHeight();
 		
-	}
-	public Image getImg() {
-		return img;
-	}
-	public void setImg(Image img) {
-		this.img = img;
-	}
+		/**
+		 * Draw the actor  
+		 * 
+		 * @param x The x coordinate at which to draw the sprite
+		 * @param y The y coordinate at which to draw the sprite
+		 */
+		public void draw(int x,int y);
+		
+
 	
 	
-	}
-public void getHeight()
-{
-}
-public void getWidth()
-{
-}
-	
-	
-}
