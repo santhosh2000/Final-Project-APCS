@@ -14,6 +14,15 @@ public class PlayerBullet extends ActorController implements Moveable
 	 */
 	private boolean used = false;
 	
+	
+	/**
+	 * Create a new shot from the player
+	 * 
+	 * @param game The game where shot was created
+	 * @param sprite The actor
+	 * @param x The initial x coordinate of the shot
+	 * @param y The initial y coordinate of the shot
+	  */
 
 	public PlayerBullet(Game g, Actor actor, int x, int y)
 	{
@@ -21,70 +30,43 @@ public class PlayerBullet extends ActorController implements Moveable
 		this.game = g;
 		this.ySpeed = y;
 	}
-	public void run(int time ){
+	public void run(int time )
+	{
 		super.move(time);
-		
-	}
-private boolean used = false;
-	
-	/**
-	 * Create a new shot from the player
-	 * 
-	 * @param game The game in which the shot has been created
-	 * @param sprite The sprite representing this shot
-	 * @param x The initial x location of the shot
-	 * @param y The initial y location of the shot
-	 */
-	public ShotEntity(Game game,String sprite,int x,int y) {
-		super(sprite,x,y);
-		
-		this.game = game;
-		
-		dy = moveSpeed;
-	}
-
-	/**
-	 * Request that this shot moved based on time elapsed
-	 * 
-	 * @param delta The time that has elapsed since last move
-	 */
-	public void move(long delta) {
-		// proceed with normal move
-		super.move(delta);
-		
-		// if we shot off the screen, remove ourselfs
-		if (y < -100) {
+		if(this.yPos < -100)
+		{
 			game.removeEntity(this);
 		}
-	}
+	}	
+		
+		
+		
 	
+
 	/**
-	 * Notification that this shot has collided with another
-	 * entity
+	 * gives a notification on where bullet has hit another actor 
 	 * 
-	 * @param other The other entity with which we've collided
+	 * @param other The other entity with which th bullet collided
 	 */
 	public void collidedWith(Entity other) {
 		// prevents double kills, if we've already hit something,
 		// don't collide
 		if (used) {
+			
 			return;
 		}
-		
-		// if we've hit an alien, kill it!
-		if (other instanceof AlienEntity) {
-			// remove the affected entities
-			game.removeEntity(this);
-			game.removeEntity(other);
-			
-			// notify the game that the alien has been killed
-			game.notifyAlienKilled();
+		// however, if we hit an alien, destory it!! mwahahaha!!
+		if( other instanceof Alien)
+		{
+			game.removeActor(this);
+			game.removeActor(other);
+			game.tellEnemyKilled();
 			used = true;
 		}
 	}
-}
-	
-}
+	}
+		
+		
  
 
 
