@@ -28,7 +28,7 @@ public class PlayerBullet extends ActorController implements Moveable
 	{
 		super(actor,x,y);
 		this.game = g;
-		this.ySpeed = y;
+		this.ySpeed = moveSpeed;
 	}
 	public void run(int time )
 	{
