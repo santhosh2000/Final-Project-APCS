@@ -1,6 +1,6 @@
 
 public class Player {
-	priavte boolean isMoving;
+	private boolean isMoving;
 	private boolean isAlive;
 	private Location myLoc;
 	private int myScore;
