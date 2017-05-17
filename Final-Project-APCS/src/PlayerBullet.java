@@ -35,7 +35,7 @@ public class PlayerBullet extends ActorController implements Moveable
 		super.move(time);
 		if(this.yPos < -100)
 		{
-			game.removeEntity(this);
+			game.removeActor(this);
 		}
 	}	
 		
@@ -48,7 +48,7 @@ public class PlayerBullet extends ActorController implements Moveable
 	 * 
 	 * @param other The other entity with which th bullet collided
 	 */
-	public void collidedWith(Entity other) {
+	public void collidedWith(Actor other) {
 		// prevents double kills, if we've already hit something,
 		// don't collide
 		if (used) {
@@ -56,7 +56,7 @@ public class PlayerBullet extends ActorController implements Moveable
 			return;
 		}
 		// however, if we hit an alien, destory it!! mwahahaha!!
-		if( other instanceof Alien)
+		if( other instanceof Enemy)
 		{
 			game.removeActor(this);
 			game.removeActor(other);

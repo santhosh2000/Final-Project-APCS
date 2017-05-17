@@ -5,4 +5,9 @@ public class Game
 	{
 		
 	}
+
+	public void tellEnemyKilled() {
+		// TODO Auto-generated method stub
+		
+	}
 }
