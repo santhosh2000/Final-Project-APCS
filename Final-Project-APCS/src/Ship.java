@@ -11,12 +11,14 @@ public class Ship {
 	public Ship ( int xPos, int yPos, Game game)
 	{
 		super(xPos,yPos,game);
+		this.game = game;
 		
 	}
 	
-	public static void main(String[] args)
+	public void move()
 	{
-		System.out.println("Why are you so bad!");
+		
 	}
+	
 
 }
