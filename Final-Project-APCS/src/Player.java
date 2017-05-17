@@ -1,5 +1,6 @@
 
-public class Player {
+public class Player
+{
 	private boolean isMoving;
 	private boolean isAlive;
 	private Location myLoc;
