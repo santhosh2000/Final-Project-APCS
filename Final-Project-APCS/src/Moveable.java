@@ -1,4 +1,4 @@
 
 public interface Moveable {
-	public void run();
+	public void run(int amountOfTime);
 }
