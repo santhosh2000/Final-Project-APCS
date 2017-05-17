@@ -5,12 +5,12 @@ public class EndMenu
 	private int score;
 	private JLabel jl;
 	private boolean gameOver;
-	//CALM YOUR TITS PRATEEK\\
+
 	public EndMenu(int a,JLabel theMessage)
 	{
 		score = a;
 		jl = theMessage;
-		gameOver = true;
+		gameOver = false;
 	}
 	public int getScore()
 	{
