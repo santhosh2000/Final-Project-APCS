@@ -31,10 +31,11 @@ public abstract  class ActorController {
 	 * @ param y position of location where the actor waants to move to
 	 * @ param image required to make the actor 
 	 */
-	public ActorController( int x, int y, Image img)
+	public ActorController( Actor actor, int x, int y)
 	{
 		this.xPos = x;
 		this.yPos = y;
+		
 		actor = img; // need to know how to use the images 
 	}
 	/*
