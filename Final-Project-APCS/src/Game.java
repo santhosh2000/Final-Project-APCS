@@ -10,4 +10,14 @@ public class Game
 		// TODO Auto-generated method stub
 		
 	}
+
+	public void removeActor(Actor other) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void removeActor(PlayerBullet playerBullet) {
+		// TODO Auto-generated method stub
+		
+	}
 }
