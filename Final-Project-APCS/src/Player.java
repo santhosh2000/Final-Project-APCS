@@ -1,5 +1,5 @@
 
-public class Player
+public class Player extends ActorController
 {
 	private boolean isMoving;
 	private boolean isAlive;

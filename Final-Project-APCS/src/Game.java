@@ -3,9 +3,9 @@ public class Game
 {
 	public static void main(String [] args)
 	{
-		
 	}
 
+<<<<<<< HEAD
 	public void tellEnemyKilled() {
 		// TODO Auto-generated method stub
 		
@@ -20,4 +20,6 @@ public class Game
 		// TODO Auto-generated method stub
 		
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/santhosh2000/Final-Project-APCS
 }

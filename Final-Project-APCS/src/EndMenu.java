@@ -15,7 +15,7 @@ public class EndMenu
 	{
 		score = a;
 		jl = theMessage;
-		gameOver = true;
+		gameOver = false;
 	}
 	public int getScore()
 	{
