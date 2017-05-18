@@ -1,12 +1,7 @@
 import javax.swing.*;       // access to JFrame and JComponents
 
-<<<<<<< HEAD
-public class EndMenu {
-	public static void main(String[] args)
-	{
-		
-	}
-	}
+
+
 
 
 =======
@@ -15,7 +10,7 @@ public class EndMenu
 	private int score;
 	private JLabel jl;
 	private boolean gameOver;
-	//CALM YOUR TITS PRATEEK\\
+
 	public EndMenu(int a,JLabel theMessage)
 	{
 		score = a;
@@ -34,5 +29,9 @@ public class EndMenu
 	{
 		gameOver = a;
 	}
+	public static void main(String[] args)
+	{
+	}
+	
 }
 >>>>>>> branch 'master' of https://github.com/santhosh2000/Final-Project-APCS
