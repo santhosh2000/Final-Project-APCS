@@ -3,7 +3,7 @@ import java.awt.Image;
 	/**
 	 * A sprite to be displayed on the screen with the image and window 
 	 * 
-	 * @author Santhosh
+	 * @author Santhosh Saravanan
 	 */
 	public class SpriteInGame implements Actor {
 		/** The image to be drawn for this sprite */
