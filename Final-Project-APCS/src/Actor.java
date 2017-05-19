@@ -25,6 +25,9 @@ public interface  Actor
 		 * @param y The y coordinate at which to draw the sprite
 		 */
 		public void draw(int x,int y);
+		//common method for all actors to fire bullets
+		public void fire();
+}
 		
 
 	

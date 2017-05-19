@@ -85,22 +85,31 @@ public abstract  class ActorController {
 	{
 		actor.draw((int)this.xPos, (int) this.yPos);
 	}
+	public void setXPos(double x)
+	{
+		this.xPos = x;
+	}
+	public void setYPos(double y)
+	{
+		this.yPos = y;
+	}
 	/*
+	 * 
 	 * returns the x coordinate of the actor's position 
 	 */
-	public void getXPos()
+	public double getXPos()
 	{
 		return this.xPos;
 	}
 	/*
 	 *returns the y coordinate of the actor 
 	 */
-	public void getYPos()
+	public double getYPos()
 	{
 		return this.yPos;
 	}
 	/*
-	 * this function is overriden depending on the functionality of the actor
+	 * this function is overridden depending on the functionality of the actor
 	 */
 	
 	public void act()
@@ -120,7 +129,7 @@ public abstract  class ActorController {
 	 * @ param an object of type actor 
 	 */
 	
-	public void collidedWith( Actor other)
+	public void collidedWith( Enemy other)
 	{
 	}
 }
