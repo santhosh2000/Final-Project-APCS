@@ -6,17 +6,20 @@ public class Game
 	}
 
 
-	public void tellEnemyKilled() {
+	public void tellEnemyKilled() 
+	{
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void removeActor(ActorController other) {
+	public void removeActor(ActorController other) 
+	{
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void removeActor(PlayerBullet playerBullet) {
+	public void removeActor(PlayerBullet playerBullet) 
+	{
 		// TODO Auto-generated method stub
 		
 	}
