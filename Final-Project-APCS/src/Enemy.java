@@ -1,3 +1,4 @@
+import java.awt.Color;
 import java.awt.image.*;
 public class Enemy implements Actor
 {
@@ -13,7 +14,8 @@ public class Enemy implements Actor
 	}
 	public void move(int dx)
 	{
-		loc.setWidth(loc.getWidth()+dx);
+		if(loc.getWidth()> && loc.getWidth()< )
+			loc.setWidth(loc.getWidth()+dx);
 	}
 	public boolean isAlive()
 	{
@@ -25,7 +27,7 @@ public class Enemy implements Actor
 	}
 	public void fire()
 	{
-		
+		EnemyBullet bul = new EnemyBullet(loc, getHeight(), this, Color.RED);
 	}
 	public boolean willFire()
 	{
@@ -42,4 +44,3 @@ public class Enemy implements Actor
 			enemyCounter++;
 	}
 }
-
