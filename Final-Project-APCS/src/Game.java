@@ -5,13 +5,13 @@ public class Game
 	{
 	}
 
-<<<<<<< HEAD
+
 	public void tellEnemyKilled() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void removeActor(Actor other) {
+	public void removeActor(ActorController other) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -20,6 +20,6 @@ public class Game
 		// TODO Auto-generated method stub
 		
 	}
-=======
->>>>>>> branch 'master' of https://github.com/santhosh2000/Final-Project-APCS
+
+
 }
