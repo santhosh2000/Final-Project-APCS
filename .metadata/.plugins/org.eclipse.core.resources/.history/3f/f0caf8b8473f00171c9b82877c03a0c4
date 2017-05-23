@@ -1,0 +1,36 @@
+
+package SpaceGame;
+
+import java.awt.Color;
+import javax.swing.ImageIcon;
+// help from CodeDay mentors
+
+public class Bullet extends MovingActor {
+
+    
+    int radii;
+    int yVelocity;
+
+    // Constructor for bullet
+    public Bullet(int xPosition, int yPosition, int diameter, Color color) {
+        super(xPosition, yPosition, 0, 0, color);
+        this.radii = diameter;
+    }
+
+    // Get length of the bullet 
+    public int getDiameter() {
+        return radii;
+    }
+
+    // Used to draw the bullet
+    @Override
+    public void draw(Graphics g) {
+       
+
+    }
+
+    public Rectangle getBounds() {
+        Rectangle bulletHitbox = new Rectangle(xPos, yPos, 7, 15);
+        return bulletHitbox;
+    }
+}

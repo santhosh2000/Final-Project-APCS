@@ -1,0 +1,8 @@
+
+package Game;
+// help from CodeDay mentors
+public interface Moveable {
+    
+    public void move();
+    
+}

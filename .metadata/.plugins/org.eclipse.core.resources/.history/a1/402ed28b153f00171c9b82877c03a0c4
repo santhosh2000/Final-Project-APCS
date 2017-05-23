@@ -1,0 +1,59 @@
+
+package Controller;
+import java.awt.Color;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+
+/*
+ * This class couldn't have been made without the help from CodeDay mentors.
+ *  y    
+ */
+
+
+
+public class KeyboardController implements KeyListener
+{
+    private boolean[] possibleKeys; 
+    
+    // number of ASCII signature codes in the whole Java language
+    //
+    
+    
+    public KeyboardController()
+    {
+    	possibleKeys = new boolean[256]; 
+    }
+    
+    public boolean getKeyTyped(int keyCode)
+    {
+        if(keyCode < 0 || keyCode > 255)
+        {
+            return false; 
+        }
+        else
+        {
+            return possibleKeys[keyCode]; 
+        }
+    }
+    
+    public void resetController()
+    {
+    	possibleKeys = new boolean[256]; 
+    }
+    
+    @Override
+    public void keyTyped(KeyEvent ke) {
+        
+    }
+
+    @Override
+    public void keyPressed(KeyEvent event) {
+    	possibleKeys[event.getKeyCode()] = true; 
+    }
+
+    @Override
+    public void keyReleased(KeyEvent event) {
+        keyStatus[event.getKeyCode()] = false; 
+    }
+    
+}

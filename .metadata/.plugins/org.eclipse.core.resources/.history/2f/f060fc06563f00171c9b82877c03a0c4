@@ -1,0 +1,31 @@
+package SpaceGame;
+import KeyboardMechanism.KeyboardController;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import javax.swing.ImageIcon;
+
+// help from CodeDay mentors
+
+public class Explosion extends MovingActor {
+
+		
+	
+
+	ImageIcon explosion = new ImageIcon("images/explosion.png");
+   
+
+    // Constructor for all ship objects
+    public Explosion(int xPosition, int yPosition, Color color, KeyboardController control) {
+        super(xPosition, yPosition, color, control);
+    }
+
+    // Draw explosion
+    public void bonusDraw(Graphics g) {
+
+    	explosion.paintIcon(null, g, this.getXPosition(), this.getYPosition());
+    }
+
+    
+}
